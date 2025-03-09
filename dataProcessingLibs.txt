@@ -1,0 +1,6 @@
+os
+json 
+lxml   
+langchain-ollama  
+langchain-core   
+unstructured  
