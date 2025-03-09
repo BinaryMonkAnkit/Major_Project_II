@@ -1,0 +1,50 @@
+/* Global Styles */
+#root {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Layout for App */
+.appContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Ensures both components align properly */
+  gap: 20px; /* Space between components */
+  height: 100%; /* Full viewport height */
+}
+
+/* Document Processor takes 70% width */
+.documentProcessor {
+  flex: 7; /* 70% of available space */
+  max-width: 70%;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 0px;
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
+  height: 100%;
+}
+
+/* Chat Component takes 30% width */
+.chatComponent {
+  flex: 3; /* 30% of available space */
+  max-width: 30%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 0px;
+  /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .appContainer {
+    flex-direction: column; /* Stack components in small screens */
+    height: auto;
+  }
+
+  .documentProcessor, 
+  .chatComponent {
+    max-width: 100%;
+    flex: none;
+  }
+}

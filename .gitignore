@@ -1,0 +1,25 @@
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# Ignore environment variables
+.env
+config.json
+secrets.json
+
+# Ignore database files
+db.sqlite3
+*.db
+
+
+# Ignore VS Code settings
+.vscode/
+.vs
+settings.py
+
+# Ignore node_modules (if using React)
+node_modules/
+
+# ignore temporary files
+*/temp/
+extractor/Data/
